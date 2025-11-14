@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "fumapress build",
-    "dev": "fumapress dev",
-    "start": "fumapress preview",
+    "build": "node init && fumapress build",
+    "dev": "node init && fumapress dev",
+    "start": "node init && fumapress preview",
     "typecheck": "fumapress typegen && tsc --noEmit"
   },
   "dependencies": {

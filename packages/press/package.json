@@ -15,8 +15,8 @@
     "dist/*"
   ],
   "scripts": {
-    "build": "zshy",
-    "dev": "bun scripts/dev.ts",
+    "build": "node init && zshy",
+    "dev": "node init && bun scripts/dev.ts",
     "types:check": "tsc --noEmit"
   },
   "dependencies": {

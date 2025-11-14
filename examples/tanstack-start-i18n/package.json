@@ -4,9 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build && tsc --noEmit",
-    "start": "node .output/server/index.mjs"
+    "dev": "node init && vite dev",
+    "build": "node init && vite build && tsc --noEmit",
+    "start": "node init && node .output/server/index.mjs"
   },
   "dependencies": {
     "@orama/tokenizers": "^3.1.16",

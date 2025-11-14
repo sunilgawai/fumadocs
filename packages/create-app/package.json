@@ -30,9 +30,9 @@
     "dist/*"
   ],
   "scripts": {
-    "build": "pnpm run sync && tsup",
+    "build": "node init && pnpm run sync && tsup",
     "clean": "rimraf dist",
-    "dev": "tsup --watch",
+    "dev": "node init && tsup --watch",
     "lint": "eslint .",
     "postpublish": "echo \"Updating template repo\" && bash ./scripts/update-git-repo.sh",
     "types:check": "tsc --noEmit",

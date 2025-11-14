@@ -1,6 +1,6 @@
 {
   "name": "fumadocs-openapi",
-  "version": "10.0.5",
+  "version": "10.0.6",
   "description": "Generate MDX docs for your OpenAPI spec",
   "keywords": [
     "NextJs",
@@ -49,9 +49,9 @@
     "css"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "build": "node init && tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "clean": "rimraf dist",
-    "dev": "concurrently \"tsc -w --project tsconfig.build.json\" \"tsc-alias -w -p tsconfig.build.json\"",
+    "dev": "node init && concurrently \"tsc -w --project tsconfig.build.json\" \"tsc-alias -w -p tsconfig.build.json\"",
     "lint": "eslint .",
     "types:check": "tsc --noEmit"
   },

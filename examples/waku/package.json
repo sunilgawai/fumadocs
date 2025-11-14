@@ -4,9 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "dev": "waku dev",
-    "build": "waku build",
-    "start": "waku start"
+    "dev": "node init && waku dev",
+    "build": "node init && waku build",
+    "start": "node init && waku start"
   },
   "dependencies": {
     "fumadocs-core": "workspace:*",

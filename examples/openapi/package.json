@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "build:docs": "bun ./scripts/generate-docs.ts",
-    "dev": "next dev",
-    "start": "next start",
+    "build": "node init && next build",
+    "build:docs": "node init && bun ./scripts/generate-docs.ts",
+    "dev": "node init && next dev",
+    "start": "node init && next start",
     "types:check": "fumadocs-mdx && tsc --noEmit"
   },
   "dependencies": {

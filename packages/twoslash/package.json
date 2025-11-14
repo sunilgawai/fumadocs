@@ -34,9 +34,9 @@
     "styles/*"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "node init && tsup",
     "clean": "rimraf dist",
-    "dev": "tsup --watch",
+    "dev": "node init && tsup --watch",
     "lint": "eslint .",
     "types:check": "tsc --noEmit"
   },
